@@ -19,6 +19,7 @@ return {
 					name = "file", -- optional group name
 					f = { "<cmd>Telescope find_files<cr>", "Find File" }, -- create a binding with label
 					w = { "<cmd>Telescope grep_string<cr>", "Find Word" }, -- create a binding with label
+					b = { "<cmd>Telescope buffers<cr>", "find buffers" }, -- create a binding with label
 				},
 				{
 					g = {

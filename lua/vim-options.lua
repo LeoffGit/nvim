@@ -6,6 +6,7 @@ vim.g.localleader = " "
 vim.cmd("set number")
 vim.cmd("set number relativenumber")
 vim.cmd("set clipboard+=unnamedplus")
+vim.cmd("set so=999")
 
 -- Navigate vim panes better
 vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
