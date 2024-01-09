@@ -18,8 +18,11 @@ return {
 		lazy = false,
 		config = function()
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
-
+			capabilities.textDocument.completion.completionItem.snippetSupport = true
 			local lspconfig = require("lspconfig")
+				lspconfig.cssls.setup({
+				capabilites = capabilities,
+			})
 			lspconfig.tsserver.setup({
 				capabilites = capabilities,
 			})
